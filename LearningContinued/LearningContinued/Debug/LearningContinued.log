@@ -1,0 +1,5 @@
+﻿  functions.cpp
+D:\Programming\C++\CSCE_121\Projects\LearningContinued\LearningContinued\functions.cpp(17,25): warning C4018: '<': signed/unsigned mismatch
+  main.cpp
+  Generating Code...
+  LearningContinued.vcxproj -> D:\Programming\C++\CSCE_121\Projects\LearningContinued\Debug\LearningContinued.exe
