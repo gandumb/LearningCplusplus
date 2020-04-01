@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="cinCoutPrint.cpp" />
     <ClCompile Include="functions.cpp" />
+    <ClCompile Include="ifstreamPractice.cpp" />
     <ClCompile Include="references.cpp" />
     <ClCompile Include="variableTypes.cpp" />
     <ClCompile Include="cinInDepth.cpp" />
