@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <ctime>
 
 //keyword(class) class name
 class Person {
@@ -22,17 +23,9 @@ public: //can be used outside the class
 	//constructors and destructors
 	Person();
 
-	Person(std::string name, int age, bool female, std::string address, std::string profession, bool std) {
-		std::cout << "Special Constructor" << std::endl;
-		this->name = name;
-		this->age = age;
-		this->female = female;
-		this->address = address;
-		this->profession = profession;
-		this->std = std;
-	}
+	Person(std::string name, int age, bool female, std::string address, std::string profession, bool std);
 
-	~Person() {
+	virtual ~Person() {
 		std::cout << "Destructors Called" << std::endl;
 	}
 
@@ -58,13 +51,21 @@ public: //can be used outside the class
 };
 
 //Person Function Defintions
-Person::Person(){
+Person::Person()
+{
 	std::cout << "I am the default constructor!" << "\n";
 	this->name = "none";
 	this->age = -1;
 	this->female = false;
 	this->address = "null";
 	this->std = false;
+}
+
+Person::Person(std::string name, int age, bool female, std::string address, std::string profession, bool std)
+	:/*ParentPerson(),*/ name(name), age(age), female(female), address(address), profession(profession), std(std)
+	//initializer list used for class constant member variables and references
+{
+	std::cout << "Special Constructor" << std::endl;
 }
 
 

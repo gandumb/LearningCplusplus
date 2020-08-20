@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\Programming\C++\CSCE_121\LearningCplusplus\DiceSimulator\DiceSimulator\main.cpp(6,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  DiceSimulator.vcxproj -> D:\Programming\C++\CSCE_121\LearningCplusplus\DiceSimulator\Debug\DiceSimulator.exe
